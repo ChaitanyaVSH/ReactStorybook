@@ -1,0 +1,33 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url("font-awesome/css/font-awesome.min.css");
+
+.listitem {
+  font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  line-height: 2;
+  font-family: Amazon Ember;
+  color: black;
+  list-style: none;
+}
+
+.iconPrimary:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin-left: 1em; /* same as padding-left set on li */
+  width: 2rem; /* same as padding-left set on li */
+  height: 1.5rem;
+  color: green;
+}
+
+.iconOrdered::before {
+  content: "\f00d"; /* FontAwesome Unicode */
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin-left: 1em; /* same as padding-left set on li */
+  width: 2rem; /* same as padding-left set on li */
+  color: black;
+}
