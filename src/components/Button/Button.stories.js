@@ -20,6 +20,12 @@ PrimaryA.args = {
     children: "PrimA Button"
 }
 
+export const LargePrimaryA = Template.bind({})
+LargePrimaryA.args = {
+    ...PrimaryA.args,
+    children: "Large PrimA Button"
+}
+
 export const SecondaryA = Template.bind({})
 SecondaryA.args = {
     variant: "secondary",
