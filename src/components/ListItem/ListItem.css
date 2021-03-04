@@ -3,7 +3,7 @@
 
 .listitem {
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: 350;
   display: flex;
   line-height: 2;
   font-family: Amazon Ember;
@@ -11,23 +11,30 @@
   list-style: none;
 }
 
+.listitem li {
+  margin-top: 8px;
+}
+
 .iconPrimary:before {
   content: "\f00c"; /* FontAwesome Unicode */
+  font-size: 25px;
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   margin-left: 1em; /* same as padding-left set on li */
   width: 2rem; /* same as padding-left set on li */
-  height: 1.5rem;
   color: green;
+  -webkit-text-stroke: 2px white;
 }
 
 .iconOrdered::before {
   content: "\f00d"; /* FontAwesome Unicode */
+  font-size: 25px;
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   margin-left: 1em; /* same as padding-left set on li */
   width: 2rem; /* same as padding-left set on li */
   color: black;
+  -webkit-text-stroke: 2px white;
 }
