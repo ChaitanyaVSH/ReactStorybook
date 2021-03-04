@@ -1,5 +1,7 @@
 import React from "react";
+import { addParameters } from "@storybook/react";
 import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/react";
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 
 export const parameters = {
@@ -16,3 +18,9 @@ export const decorators = [
     </ThemeProvider>
   )
 ]
+
+addParameters({
+  viewport: {
+    viewports: INITIAL_VIEWPORTS,
+  }
+})
